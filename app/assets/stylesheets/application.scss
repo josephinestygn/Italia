@@ -16,10 +16,23 @@
 
  @import "bootstrap";
 
+ @font-face {
+  font-family: 'Brown Sugar';
+  src: url('Brown-Sugar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
  .image-article {
   width:250px;
   height:200px;
   object-fit: cover;
   object-position: 50% 0;
+ }
+
+
+ h1 {
+  font-family: 'Brown Sugar';
  }
