@@ -1,29 +1,35 @@
 <div id="<%= dom_id article %>">
 
 <div class="container">
-  <div class="card border-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">
+
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
     <p>
       <strong>Title:</strong>
       <%= article.title %>
+    </p></h5>
+    <p class="card-text">
+      <p> <strong>Chapo:</strong>
+      <%= article.chapo %></p>
+
+      <p>
+      <strong>Content:</strong>
+      <%= article.content %>
+     </p>
     </p>
+
+      <strong>Image:</strong>
+      <% if article.image.present? %>
+        <%= image_tag article.image, class: "image-article" %>
+      <% end %>
+      </p>
+    <p>
   </div>
-
-  <div class="card-body">
-  <p>
-    <strong>Chapo:</strong>
-    <%= article.chapo %>
-  </p>
-   <p>
-    <strong>Content:</strong>
-    <%= article.content %>
-  </p>
-  <p>
-    <strong>Image:</strong>
-    <%= article.image %>
-  </p>
+</div>
 </div>
 
 </div>
-
 </div>
