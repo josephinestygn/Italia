@@ -1,22 +1,29 @@
 <div id="<%= dom_id article %>">
-  <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
 
+<div class="container">
+  <div class="card border-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">
+    <p>
+      <strong>Title:</strong>
+      <%= article.title %>
+    </p>
+  </div>
+
+  <div class="card-body">
   <p>
     <strong>Chapo:</strong>
     <%= article.chapo %>
   </p>
-
-  <p>
+   <p>
     <strong>Content:</strong>
     <%= article.content %>
   </p>
-
   <p>
     <strong>Image:</strong>
     <%= article.image %>
   </p>
+</div>
+
+</div>
 
 </div>
