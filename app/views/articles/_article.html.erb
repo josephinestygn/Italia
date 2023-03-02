@@ -22,6 +22,9 @@
     </p>
 
       <strong>Image:</strong>
+      <% if article.image.present? %>
+        <%= image_tag article.image, class: "image-article" %>
+      <% end %>
       </p>
     <p>
   </div>
