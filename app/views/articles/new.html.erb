@@ -1,0 +1,17 @@
+
+<h1>Écrire un nouvel article :</h1>
+
+<style>
+h1 {
+  font-family : "Brown Sugar";
+  padding : 1.5em;
+}
+</style>
+
+<%= render "form", article: @article %>
+
+<br>
+
+<div>
+  <%= link_to "Retour aux articles", articles_path %>
+</div>
