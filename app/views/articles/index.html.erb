@@ -8,15 +8,20 @@
 
 <h1 class="art">Articles</h1>
 <div class="row">
-<div class= "d-flex justify-content-center">
+<div class= "d-flex justify-content-evenly">
+
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>
-
+</div>
+</div>
+</div>
   <% end %>
+  </div>
+  </div>
 </div>
-</div>
-</div>
+
+
 
 <%= link_to "Nouveau article", new_article_path %>
 <style>
