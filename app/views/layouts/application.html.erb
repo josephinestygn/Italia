@@ -8,41 +8,47 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <style>
+    h1 {
+      font-family : "Brown Sugar";
+      padding : 1.5em;
+    }
+    </style>
   </head>
 <body>
   <nav class="navbar navbar-expand-lg -body-tertiary" style = "background-color: #87a180";>
-  <div class="container-fluid">
-<nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="Italia/logo.png" alt="Bootstrap" width="30" height="24">
-    </a>
-  </div>
-</nav>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Italia/logo.png" alt="Bootstrap" width="30" height="24">
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-black"href="#">Articles</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link text-black"href="#">Articles</a>
+          </li>
 
-        <li class="nav-item">
-          <a class=" nav-link active" text-decoration-none ><%= link_to "Création d'articles", new_article_path %></p>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class=" nav-link active" text-decoration-none ><%= link_to "Création d'articles", new_article_path %></p>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-</nav>
-
-<%= yield %>
-
+  <div class="container">
+    <%= yield %>
+  </div>
 <footer class="text-center text-lg-start bg-light text-muted",style = "background-color: #87a180";>
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom";>

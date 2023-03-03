@@ -1,43 +1,10 @@
-
-
 <div class="col-lg-4">
-<div class="m-3">
-<div class="card" style="width: 18rem;">
-
-  <div class="card-body">
-    <h5 class="card-title">
-    <p>
-
-      <%= article.title %>
-    </p></h5>
-    <div class="card-text">
-      <p>
-      <%= article.chapo %>
+  <div class="card">
+    <img src="<%= article.image%>" alt="image article" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><%= article.title %></h5>
+      <p><%= article.chapo %></p>
+      <%= link_to "Voir l'article", article,class:"btn btn-outline-success stretched-link" %>
     </div>
-
-      <div class="contenu">
-      <p>
-      <strong>Content:</strong>
-      <%= article.content%>
-     </p>
-     </div>
-    </p>
-
-
-
-
-      <img src="<%= article.image%>" alt="image article" class="image-article">
-      </p>
-
-    <p>
-    <div class="voir">
-    <p>
-
-    <%= link_to "Voir l'article", article,class:"btn btn-outline-success" %>
-
-  </p>
   </div>
-  </div>
-</div>
-</div>
 </div>

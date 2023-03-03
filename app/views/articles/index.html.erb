@@ -1,38 +1,7 @@
-<style>
-.contenu {
-  display: none;
-}
-
-</style>
-<p style="color: green"><%= notice %></p>
-
-
-  <h1 class="art">Articles</h1>
-  <div class="row">
-
-      <% @articles.each do |article| %>
-      <%= render article %>
-    <% end %>
-
-  </div>
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <%= link_to "Nouvel article", new_article_path , class:"btn btn-outline-success"%>
-  </div>
-
-
-
-
-
-<style>
-
-.art{
- padding left : 4000%
-}
-
-
-h1 {
-  font-family : "Brown Sugar";
-  padding : 1.5em;
-}
-
-</style>
+<h1 class="art">Articles</h1>
+<div class="row">
+  <% @articles.each do |article| %>
+    <%= render article %>
+  <% end %>
+</div>
+<%= link_to "Nouvel article", new_article_path , class:"btn btn-outline-success"%>
