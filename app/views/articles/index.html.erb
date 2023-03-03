@@ -1,49 +1,7 @@
-<<<<<<< HEAD
 <h1 class="art">Articles</h1>
 <div class="row">
   <% @articles.each do |article| %>
     <%= render article %>
   <% end %>
-=======
-<style>
-.contenu {
-  display: none;
-}
-
-</style>
-<p style="color: green"><%= notice %></p>
-
-<div class="container">
-
-  <h1 class="art">Articles</h1>
-
-  <p>
- <center>Bienvenue sur mon blog de voyage dédié à l'Italie ! </center><br>Si vous êtes à la recherche d'inspiration pour votre prochain voyage ou tout simplement passionné par la culture italienne, vous êtes au bon endroit.<br> Au fil des années, j'ai eu la chance de découvrir les trésors cachés de ce magnifique pays, llages pittoresques.
-
-<br>Je suis ravi de partager mes expériences, mes astuces et mes recommandations avec vous, pour vous aider à planifier le voyage parfait en Italie.<br> Que vous soyez intéressé par l'art et l'histoire, la nature et l'aventure, ou simplement par la délicieuse cuisine italienne, il y en a pour tous les goûts dans ce pays merveilleux.
-
-<br>Au cours de mes voyages, j'ai appris à apprécier la beauté et la diversité de l'Italie, mais j'ai également  découvert des traditions et des coutumes fascinantes.<br> J'espère que ce blog vous inspirera et vous donnera envie de découvrir cette destination incontournable.
-
-<br>Suivez-moi dans mes aventures , ensemble nous explorerons les merveilles de ce pays qui ne cesse de nous émerveiller😋</p>
-  <div class="flex">
-
-      <div class="articles" id="articles">
-    <% @articles.each do |article| %>
-      <%= render article %>
-    <% end %>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-  </div>
-
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <%= link_to "Nouvel article", new_article_path , class:"btn btn-outline-success"%>
-  </div>
-
-
-
->>>>>>> ef778c4fe532529c1cd275c03c2ee4e551968a55
 </div>
 <%= link_to "Nouvel article", new_article_path , class:"btn btn-outline-success"%>
