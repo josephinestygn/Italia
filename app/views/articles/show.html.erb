@@ -16,11 +16,12 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @article %>
-
+<div class=container>
 <div>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Retour aux articles", articles_path %>
+  <%= link_to "Modifier cet article", edit_article_path(@article),class:"btn btn-success" %> |
+  <%= link_to "Retour aux articles", articles_path ,class:"btn btn-sucess"%>
+<br>
+  <%= button_to  "Supprimer cet article", @article, method: :delete, class:"btn btn-outline-danger" %>
 
-  <%= button_to  "Supprimer cet article", @article, method: :delete, class:"btn btn-danger" %>
-
+</div>
 </div>
