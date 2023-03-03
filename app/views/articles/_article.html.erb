@@ -1,15 +1,17 @@
-<div id="<%= dom_id article %>">
+
+
 <div class="col-lg-4">
+<div class="m-3">
 <div class="card" style="width: 18rem;">
 
   <div class="card-body">
     <h5 class="card-title">
     <p>
-      <strong>Title:</strong>
+
       <%= article.title %>
     </p></h5>
     <div class="card-text">
-      <p> <strong>Chapo:</strong>
+      <p>
       <%= article.chapo %>
     </div>
 
@@ -21,7 +23,8 @@
      </div>
     </p>
 
-      <strong>Image:</strong>
+
+
 
       <img src="<%= article.image%>" alt="image article" class="image-article">
       </p>
@@ -37,5 +40,4 @@
   </div>
 </div>
 </div>
-
 </div>
