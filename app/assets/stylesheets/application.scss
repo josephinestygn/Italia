@@ -40,6 +40,8 @@
 
  h1 {
   font-family: 'Brown Sugar';
+  color: #532915;
+  font-size: 80px;
  }
 
  .articles {
@@ -48,4 +50,13 @@
 
 p{
   font-family:'Reading Regular';
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #371d10;
 }
