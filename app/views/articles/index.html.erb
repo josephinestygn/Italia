@@ -6,25 +6,27 @@
 </style>
 <p style="color: green"><%= notice %></p>
 
-<div class=container>
-<h1 class="art">Articles</h1>
-<div class="row">
-<div class= "d-flex justify-content-evenly">
+<div class="container">
 
-<div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-</div>
-</div>
-</div>
-  <% end %>
+  <h1 class="art">Articles</h1>
+  <div class="flex">
+
+      <div id="articles">
+    <% @articles.each do |article| %>
+      <%= render article %>
+    <% end %>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
   </div>
+
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <%= link_to "Nouvel article", new_article_path , class:"btn btn-outline-success"%>
   </div>
-</div>
 
 
-
-<%= link_to "Nouvel article", new_article_path %>
 
 </div>
 <style>

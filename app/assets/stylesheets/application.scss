@@ -22,7 +22,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Reading Regular';
+  src: url('app/assets/fonts/Reading Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
  .image-article {
@@ -36,3 +41,10 @@
  h1 {
   font-family: 'Brown Sugar';
  }
+
+ .articles {
+  display: flex;
+ }
+p{
+  font-family:'Reading Regular';
+}
